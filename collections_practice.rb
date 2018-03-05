@@ -1,23 +1,27 @@
 def sort_array_asc(array)
   array.sort do |arr|
-    1 <=> 2
+    2 <=> 1
   end
 end
 
-def sort_array_desc
-  
+def sort_array_desc(array)
+  array.sort do |arr, num|
+    num <=> arr
+  end
 end
 
-def sort_array_char
-  
+def sort_array_char_count(array)
+  array.sort_by do |word|
+    word.length
+  end
 end
 
-def swap_elements
-  
+def swap_elements(array)
+
 end
 
-def reverse_array
-  
+def reverse_array(array)
+    array.reverse!
 end
 
 def kesha_maker
